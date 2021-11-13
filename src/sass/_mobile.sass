@@ -1,0 +1,104 @@
+@media (max-width: 1200px)
+
+    .container
+        max-width: 960px
+
+
+@media (max-width: 992px)
+    .container
+        max-width: 720px
+    .header_menu .menu_list
+        width: 90%
+    .promo
+        &_header
+            font-size: 40px
+        &_subheader
+            font-size: 20px
+        &_next
+            &::before
+                left: 355px
+            &::after
+                right: -365px
+    .about
+        height: 550px
+        padding-top: 80px
+        &_wrapper
+            margin-top: 80px
+        &_internet
+            width: 280px
+            &-text
+                width: 230px
+        &_page
+            width: 280px
+            &-text
+                width: 230px
+        &_head
+            width: 280px
+            &-text
+                width: 230px
+    .services
+        padding-top: 80px
+        padding-bottom: 50px
+        &_wrapper
+            grid-template-columns: repeat(2, 300px)
+            justify-content: center
+            margin-top: 80px
+    .works
+        padding-top: 80px
+        &_menu
+            margin-top: 70px
+        &_product
+            grid-template-columns: repeat(2, 300px)
+            justify-content: center
+            margin-top: 70px
+        &_btn
+            margin-top: 70px
+            margin-bottom: 70px
+    .price
+        padding-bottom: 50px
+        &_wrapper
+            grid-template-columns: repeat(2, 300px)
+            justify-content: center
+            row-gap: 40px
+        &_item
+            min-height: 530px
+        &_item-package
+            margin-top: 30px
+        &_item-btn
+            margin-top: 40px
+    .team
+        padding-top: 80px
+        &_wrapper
+            grid-template-columns: repeat(2, 300px)
+            justify-content: center
+            row-gap: 40px
+    .blog
+        padding-bottom: 70px
+        &_header
+            padding-top: 70px
+        &_wrapper
+            margin-top: 70px
+        &_item-img
+            width: 330px
+            img
+                max-width: 330px
+        &_item-text
+            width: 330px
+    .footer
+        padding-top: 80px
+        &_contact
+            margin-top: 70px
+        .form
+            grid-template-columns: repeat(2, 320px)
+            justify-content: center
+
+
+@media (max-width: 768px)
+    .container
+        max-width: 526px
+    
+
+@media (max-width:576px)
+    .container
+        width: 100%
+        padding: 0 10px

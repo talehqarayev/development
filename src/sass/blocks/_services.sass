@@ -1,0 +1,58 @@
+.services
+    background-color: #e4fdf9
+    padding-top: 150px
+    min-height: 1200px
+    &_header
+        text-align: center
+        font-weight: normal
+    &_subheader
+        text-align: center
+        font-size: 15px
+        margin-top: 30px
+    &_wrapper
+        margin-top: 120px
+        display: grid
+        grid-template-columns: repeat(3,300px)
+        grid-template-rows: repeat(2, 350px)
+        grid-auto-rows: 350px
+        gap: 30px
+    &_item
+        position: relative
+        background-color: white
+        width: 300px
+        height: 350px
+        transition: all 0.5s ease
+        padding: 30px
+        text-align: center
+        &:hover
+            background-color: $main-color
+            color: white
+            box-shadow: 0px 5px 10px rgba(0,0,0,0.5)
+            .item_btn
+                border: 1px solid white
+
+    .item_icon
+        display: flex
+        justify-content: center
+        align-items: center
+        height: 40px
+        text-align: center
+        img
+            max-width: 40px
+            max-height: 40px
+    .item_subheader
+        margin-top: 20px
+    .item_text
+        margin-top: 10px
+        font-size: 14px
+    .item_btn
+        position: absolute
+        transform: translate(-50%,-50%)
+        bottom: 0px
+        width: 140px
+        height: 40px
+        text-transform: uppercase
+        border: 2px solid black
+        color: black
+        padding: 8px 5px 10px 5px
+        cursor: pointer

@@ -1,0 +1,83 @@
+.price
+    background-color: #f0f1f1
+    min-height: 1000px
+    padding-top: 120px
+    &_header
+        text-align: center
+        font-weight: normal
+    &_subheader
+        text-align: center
+        font-size: 15px
+        margin-top: 20px
+    &_wrapper
+        margin-top: 120px
+        display: grid
+        justify-content: center
+        grid-template-columns: repeat(3, 300px)
+        column-gap: 25px
+        min-height: 600px
+    &_item
+        width: 300px
+        min-height: 600px
+        background-color: white
+        text-align: center
+        position: relative
+        transition: all 0.5s ease
+        &:hover
+            box-shadow: 0px 5px 10px rgba(0,0,0,0.5)
+        &-blue
+            background-color: #3949ab
+            height: 170px
+            padding-top: 35px
+        &-header
+            color: white
+            font-size: 25px
+            text-align: center
+        &-subheader
+            margin-top: 10px
+            color: white
+            font-weight: normal
+            font-size: 14px
+            span
+                font-size: 40px
+            .item_dollar
+                position: absolute
+                top: 93px
+                left: 75px
+                font-size: 15px
+        &-package
+            margin-top: 50px
+            ul
+                list-style: none
+                padding: 0
+                margin: 0
+                li
+                    padding: 15px
+                    font-size: 15px
+                    position: relative
+                    color: black
+                    &:after
+                        content: ""
+                        position: absolute
+                        width: 150px
+                        background-color: #bfbfbf
+                        left: 75px
+                        height: 1px
+                        border: 0
+                        top: 40px
+
+        &-btn
+            margin-top: 60px
+            width: 180px
+            height: 55px
+            border: 1px solid black
+            text-align: center
+            background-color: white
+            color: black
+            font-size: 20px
+            text-transform: uppercase
+            transition: all 0.5s ease
+            &:hover
+                border: none
+                background-color: $main-color
+                color: white
